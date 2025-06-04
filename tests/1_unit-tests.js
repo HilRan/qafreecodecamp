@@ -3,8 +3,8 @@ const assert = require('chai').assert;
 describe('Basic Assertions', function () {
   // #1
   it('#isNull, #isNotNull', function () {
-    assert.isNotNull('I am not null', 'This value should not be null');
     assert.isNull(null, 'This is null');
+    assert.isNotNull('I am not null', 'This value should not be null');
   });
 
   // #2
@@ -24,9 +24,9 @@ describe('Basic Assertions', function () {
 
   // #4
   it('#isTrue, #isNotTrue', function () {
-  assert.isTrue(true, 'true is true');
-  assert.isTrue(!!'double negation', 'Double negation of a truthy value is true');
-  assert.isNotTrue({}, 'Objects are truthy, but not strictly true'); // Changed !!{} to {}
+    assert.isTrue(true, 'true is true');
+    assert.isTrue(!!'double negation', 'Double negation of a truthy value is true');
+    assert.isNotTrue({}, 'Objects are truthy, but not strictly true'); 
   });
 
   describe('Equality', function () {
