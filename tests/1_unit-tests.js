@@ -3,9 +3,9 @@ const assert = require('chai').assert;
 describe('Basic Assertions', function () {
   // #1
   it('#isNull, #isNotNull', function () {
-  assert.isNull(null, 'This is null');              
-  assert.isNotNull('I am not null', 'This value should not be null');  
-}); 
+    assert.isNull(null, 'This is null');              
+    assert.isNotNull('I am not null', 'This value should not be null');  
+  }); 
 
   // #2
   it('#isDefined, #isUndefined', function () {
